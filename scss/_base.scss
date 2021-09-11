@@ -1,0 +1,34 @@
+/* VARIABLES - RESETS - ESTILOS GENERALES */
+
+$fondo:#e7feff;
+$verde1:#042B33;
+$verde2:#166166;
+$verde3:#3B9199;
+$verde4:#81D4BD;
+$marron:#602626;
+$naranja:#FFD1B7;
+
+/* resets - generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Crete Round", sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+//* Links */
+a {
+    text-decoration: none;
+    color: $verde1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a#logoHome:hover{
+    text-decoration: none;
+}

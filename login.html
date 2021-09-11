@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="TOPICO, UNITE, INICIAR SESIÓN, ESCRIBIR, LEER">
+    <meta name="description" content="Unite a Topico. Publicá tus ideas sobre cualquier tema y conectate con millones de lectores de manera facil y gratuita.">
+    <title>Topico - Unite.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <div class="loginGrid">
+        <nav>
+            <ul>
+                <li><a href="./index.html" id="logoHome"><img src="./assets/logoTopico.png" width="20" height="25" alt="Home"> |</a></li>
+                <li><a href="./nuestrahistoria.html">Nuestra historia</a> |</li>
+                <li><a href="./membresia.html">Membresía</a> |</li>
+                <li><a href="./escribir.html">Escribir</a> |</li>
+                <li><a href="./login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <div class="loginHero">
+            <h1>Unite a Topico.</h1>
+        </div>
+        <div class="login">
+            <h2 class="animate__animated animate__slideInDown">Creá tu espacio.</h2>
+            <h3 class="login__form-title animate__animated animate__fadeIn animate__delay-1s">Contá tu historia, a tu manera y encontrá tu audiencia.</h3>
+            <button type="button" class="btn btn-outline-light btn-lg colorBoton" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Iniciar sesión
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header text-white" style="background-color:#602626;">
+                            <!-- agregado background-color y text-white -->
+                            <h5 class="modal-title" id="exampleModalLabel">Bienvenido/a</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <!-- agregado btn-close-white -->
+                        </div>
+                        <div class="modal-body" style="background-color:#e7feff;">
+                            <main class="form-signin">
+                                <form>
+                                    <!-- <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1> -->
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="nombre@ejemplo.com">
+                                        <label for="floatingInput">Dirección email</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Contraseña">
+                                        <label for="floatingPassword">Contraseña</label>
+                                    </div>
+                                    <div class="checkbox mb-3">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Recordame
+                                        </label>
+                                    </div>
+                                    <button class="w-100 btn btn-outline-dark btn-sm"
+                                        type="submit">Ingresar</button>
+                                    <p class="mt-5 mb-3 text-muted">Formulario tomado de los ejemplos de BS :D
+                                    </p>
+                                </form>
+                            </main>
+                        </div>
+                        <div class="modal-footer" style="background-color:#602626;">
+                            <button type="reset" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <form>
+                <input type="text" name="Nombre" placeholder="Nombre" required>
+                <input type="text" name="Apellido" placeholder="Apellido" required>
+                <div>
+                    <input type="text" name="correo" placeholder="Tu correo" required> @
+                    <select name="buzon">
+                        <option value="gmail">gmail.com</option>
+                        <option value="hotmail">hotmail.com</option>
+                        <option value="outlook">outlook.com</option>
+                    </select>
+                </div>
+                <textarea name="etc" cols="50" rows="10"
+                    placeholder="Contanos sobre que te gustaría leer o escribir en Topico!">
+                </textarea>
+                <label for="notificar">¿Deseas recibir notificaciones de Topico a tu correo?</label>
+                <input type="checkbox" name="notificar">
+                <div>
+                <input type="submit" value="Unirme!"><input type="reset" value="Borrar campos">
+                </div>
+            </form> -->
+        </div>
+        <footer class="loginFooter">
+            <a href="./index.html">Home |</a>
+            <a href="ayuda"> Ayuda |</a>
+            <a href="escritores"> Escritores |</a>
+            <a href="blog"> Blog |</a>
+            <a href="carreras"> Carreras |</a>
+            <a href="privacidad"> Privacidad |</a>
+            <a href="terminos"> Términos |</a>
+            <a href="sobrenosotros"> Sobre nosotros</a>
+        </footer>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+/* modificadores */
+
+// generales /
+
+/// Botones /
+
+button:hover {
+    color: $verde3;
+    font-weight: bold;
+}
+
+input:hover {
+    color: $verde3;
+    font-weight: bold;
+}
+
+/// nav /
+
+nav img {
+    width: 1.25em;
+    height: auto;
+    position: relative;
+    top: 0;
+}
+
+/// ul /
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/// otros/
+
+.flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__h1--font {
+    /* height: 100%; */
+    background-color: $verde4;
+    color: $marron;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/////////////////////////////// INDEX /
+
+/// index__hero /
+
+.hero h1 {
+    font-size: 3em;
+}
+
+#imgHero {
+    display: flex;
+    // height: auto;
+    // width: 100%;
+    background: linear-gradient(to left, $marron, $naranja);
+}
+
+#imgHero img {
+    margin: auto;
+    width: 90%;
+    // height: 100%;
+    // width: 80%;
+    opacity: 0.5;
+}
+
+/// index__tendencias /
+
+/// index__publicaciones /
+
+.publicaciones__articulo {
+    margin: 1%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #81d4bc9c;
+    color: rgb(32, 32, 32);
+    overflow: hidden;
+    .publicaciones__articulo--ml {
+        margin-left: 2%;
+        margin-top: 2%;
+        width: 65%;
+    }
+    .publicaciones__articulo--marron{
+        color: $marron;
+    }
+    .publicaciones__articulo--ml-10-mb-2 {
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+    .articulo__contenido {
+        display: flex;
+        justify-content: space-around;
+        margin: 1%;
+        width: 93%;
+    }    
+    .articulo__contenido--order-width50 {
+        order: -1;
+        width: 50%;
+    }
+    .articulo__contenido--mx {
+        margin-left: 1%;
+        margin-right: 2%;
+    }
+    .articulo__contenido--161px {
+        border-radius: 5px;
+        border-style: solid;
+        border-color: $verde2;
+        height: 86%;
+        width: 161px;
+    }
+}
+
+/// index__footer /
+
+.indexGrid__footer--font-p {
+    padding-top: .5em;
+    font-size: .7em;
+}
+
+///////////////////////// NUESTRAHISTORIA /
+
+// nuestrahistoria__hist /
+.hist img{
+    border: 1px solid $marron;
+    height: auto;
+    max-width: 15%;
+    margin-left: 3em;
+    /* reemplazar esta imagen */
+}
+
+.hist p{
+    height: 60%;
+    border-right: 1px solid $verde1;
+    padding-right: 3em;
+}
+
+// nuestrahistoria__histvideoH /
+.videoH video{
+    height: 100%;
+    max-width: 75%;
+    padding: 1em;
+}
+
+//////////////////////////////////////// MEMBRESÍA /
+
+// membresía__hero /
+
+#memHero h1 {
+    font-size: 5em;
+}
+#memHero button{
+    height: 100%;
+    width: auto;
+}
+
+// membresía__haceteMiembro /
+
+/* adaptacion de resultado de google para poner opacidad al fondo */
+
+#elem3::before{
+    background-image: url(../assets/letters-of-lead-1426501-1279x957.jpg);
+    background-repeat: no-repeat;
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+#elem3 h3{
+    color: #042B33;
+    position: relative;
+    text-align: center;
+}
+
+#elem3 button{
+    position: relative;
+    /* TIENE QUE ESTAR RELATIVE PARA QUE NO TOME OPACITY */
+    height: 100%;
+    width: auto;
+}
+
+
+/////////////////////////////////////// ESCRIBIR /
+
+// escribir__hero /
+
+.escrHero h1{
+    color:#042B33;
+    font-size: 2.5em;
+    align-self: flex-start;
+}
+.escrHero p{
+    align-self: flex-start;
+    max-width: 70%;
+}
+.escrHero a{
+    align-self: center;
+}
+.escrHero a button{
+    height: 4rem;
+    width: 13rem;
+}
+.escrHero img{
+    height: 100%;
+    max-width:55vw;
+}
+
+// escribir__tituloEscritores /
+
+.escrHero #escrHeroTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right:2px solid $marron;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+// escribir__escritores /
+
+.escritores ul{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    font-size: 1.5em;
+    border-top: 1px solid $naranja;
+    height: 100%;
+}
+.escritores ul li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $naranja;
+    height: 20%;
+    color: #81D4BD;
+}
+.escritores img{
+    border-radius: 3rem;
+    margin-right: 1rem;
+    height: 100%;
+}
+
+////////////////////////////// LOGIN /
+
+// login__nav /
+
+.loginGrid nav{
+    justify-self: stretch;
+    border-bottom: 1px solid $naranja;
+    img {
+        vertical-align: inherit;
+    }
+    ul{
+        margin:0;
+        padding-left: 0;
+    }
+}
+
+// login__form /
+
+.login__form-title{
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-delay: 1s;
+}
+
+.colorBoton{
+    background-color: $marron
+}
+
+// .login form{
+//     border-radius: 5px;
+//     padding: 5vh;
+//     background-color:$fondo;
+//     display: flex;
+//     align-content: center;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     height: 100%;
+// reemplazado por modal
+// }
+
+// login__footer /
+
+.loginFooter a{
+    color: $naranja;
+    
+}

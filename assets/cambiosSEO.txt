@@ -1,0 +1,9 @@
+reduccion tamaño imagenes:
+	avatares: > a 65%
+	otras imagenes: entre 10% y 60%
+
+Agregado meta keywords.
+Agregado meta description.
+Modificado title en cada página.
+Se quitó de la carga la fuente roboto de index, que no era utilizada.
+cambiado relacion de tamaño imagen de hero en index para que respete escala.

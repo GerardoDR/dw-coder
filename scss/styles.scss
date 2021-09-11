@@ -1,0 +1,78 @@
+/* New Palette
+verdes
+#042B33
+#166166
+#3B9199
+#81D4BD
+naranjas
+#602626
+#FFD1B7
+*/
+
+/* IMPORTS */
+
+@import "base";
+@import "layout";
+@import "components";
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 720px){
+    body{
+        font-size: 13px;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+
+    }
+    div#imgHero{
+        display: none;
+    }
+    .indexGrid {
+        grid-template-areas:
+            'nav nav nav'
+            'hero hero hero'
+            'tendencias tendencias tendencias'
+            'publicaciones publicaciones publicaciones'
+            'topicos topicos topicos'
+            'footer footer footer';
+    }
+
+}
+
+@media only screen and (min-width: 721px){
+    body{
+        font-size: 14px;
+    }
+    .indexGrid {
+        grid-template-areas:
+            'nav nav nav'
+            'hero hero hero'
+            'tendencias tendencias tendencias'
+            'publicaciones publicaciones publicaciones'
+            'topicos topicos topicos'
+            'footer footer footer';
+    }
+    .indexGrid aside ol{
+        justify-content:start;
+        align-self: start;
+    }
+    .indexGrid aside{
+        min-height: 9.375em;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        font-size: 16px;
+    }
+    .indexGrid {
+        grid-template-areas:
+        'nav nav nav'
+        'hero hero hero'
+        'tendencias tendencias tendencias'
+        'publicaciones publicaciones topicos'
+        'publicaciones publicaciones footer';
+    }
+}
