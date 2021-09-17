@@ -40,7 +40,6 @@ ul li {
 }
 
 .hero__h1--font {
-    /* height: 100%; */
     background-color: $verde4;
     color: $marron;
     letter-spacing: 3px;
@@ -57,16 +56,12 @@ ul li {
 
 #imgHero {
     display: flex;
-    // height: auto;
-    // width: 100%;
     background: linear-gradient(to left, $marron, $naranja);
 }
 
 #imgHero img {
     margin: auto;
     width: 90%;
-    // height: 100%;
-    // width: 80%;
     opacity: 0.5;
 }
 
@@ -168,8 +163,6 @@ ul li {
 
 // membresía__haceteMiembro /
 
-/* adaptacion de resultado de google para poner opacidad al fondo */
-
 #elem3::before{
     background-image: url(../assets/letters-of-lead-1426501-1279x957.jpg);
     background-repeat: no-repeat;
@@ -238,8 +231,6 @@ ul li {
 .escritores ul{
     display:flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: flex-start; */
     font-size: 1.5em;
     border-top: 1px solid $naranja;
     height: 100%;
@@ -290,18 +281,6 @@ ul li {
 .colorBoton{
     background-color: $marron
 }
-
-// .login form{
-//     border-radius: 5px;
-//     padding: 5vh;
-//     background-color:$fondo;
-//     display: flex;
-//     align-content: center;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     height: 100%;
-// reemplazado por modal
-// }
 
 // login__footer /
 

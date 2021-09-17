@@ -18,7 +18,6 @@ nav {
     grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(5, auto);
     max-width: 118.75em;
-    /* overflow: hidden;  NO PERMITE FUNCIONAMIENTO DE NAV STICKY*/
 }
 
 .memGrid {
@@ -91,21 +90,18 @@ nav {
     column-gap: 1%;
     text-align: center;
     background:$verde4;
-    /* overflow: hidden; */
 }
 
 // index__tendencias /
 
 .tendencias {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     grid-area: tendencias;
     border-top: 2px solid $verde1;
     border-bottom: 2px solid $verde1;
     justify-content: space-evenly;
-    /* height: 100%;
-    width: 100%; */
+
     .tendencias__ol {
         display: grid;
         list-style-position: inside;
@@ -114,11 +110,9 @@ nav {
         margin-left: 1.5em;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
-        /* font-size: 110%; */
         letter-spacing: 2px;
         word-spacing: 2px;
         line-height: 1.3;
-        /* height: 100%; */
     }
 }
 
@@ -261,7 +255,6 @@ nav {
 
 #elem4 {
     width: 100%;
-    /* height: 100%; */
     grid-area: elem4;
     align-items: flex-start;
     justify-content: flex-end;
@@ -284,8 +277,6 @@ nav {
 
 .escritoresTitle{
     grid-area: escritoresTitle;
-    /* display: flex;
-    justify-content: space-evenly; */
     font-size: 2em;
     background-color:$verde1;
     color: $fondo;
