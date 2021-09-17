@@ -72,6 +72,13 @@ ul li {
 
 /// index__tendencias /
 
+@for $i from 1 through 6{
+
+.tendencias__ol--ico#{$i}{
+    list-style-image: url(../assets/iconos/#{$i}.svg);
+    }
+}
+
 /// index__publicaciones /
 
 .publicaciones__articulo {
@@ -300,5 +307,4 @@ ul li {
 
 .loginFooter a{
     color: $naranja;
-    
 }
