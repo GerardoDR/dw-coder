@@ -19,7 +19,6 @@ naranjas
 
 body {
   font-family: "Crete Round", sans-serif;
-  /* font-family: 'Roboto Condensed', sans-serif; */
 }
 
 a {
@@ -332,7 +331,6 @@ ul li {
 }
 
 .hero__h1--font {
-  /* height: 100%; */
   background-color: #81D4BD;
   color: #602626;
   letter-spacing: 3px;
