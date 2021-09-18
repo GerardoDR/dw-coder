@@ -33,12 +33,21 @@ naranjas
         grid-template-areas:
             'nav nav nav'
             'hero hero hero'
-            'tendencias tendencias tendencias'
             'publicaciones publicaciones publicaciones'
             'topicos topicos topicos'
             'footer footer footer';
+            // 'tendencias tendencias tendencias'
+    
+        .tendencias{
+            display: none;
+        }
+        .publicaciones{
+            margin-top: .5em;
+        }
+        .hero{
+            border-bottom: black solid 1px;
+        }
     }
-
 }
 
 @media only screen and (min-width: 721px){
@@ -54,12 +63,18 @@ naranjas
             'topicos topicos topicos'
             'footer footer footer';
     }
+    
     .indexGrid aside ol{
         justify-content:start;
         align-self: start;
     }
     .indexGrid aside{
         min-height: 9.375em;
+    }
+    .tendencias {
+        .tendencias__ol {
+        grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
@@ -74,5 +89,10 @@ naranjas
         'tendencias tendencias tendencias'
         'publicaciones publicaciones topicos'
         'publicaciones publicaciones footer';
+    }
+    .tendencias {
+        .tendencias__ol {
+        grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }

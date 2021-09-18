@@ -54,7 +54,11 @@ nav {
   margin-left: 2px;
   grid-template-rows: auto repeat(3, 48vh) 1fr;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "nav nav" "memHero memHero" "elem1 elem2" "elem3 elem3" "elem4 elem4";
+  grid-template-areas: "nav nav"
+ "memHero memHero"
+ "elem1 elem2"
+ "elem3 elem3"
+ "elem4 elem4";
   justify-items: center;
   align-items: center; }
 
@@ -64,7 +68,11 @@ nav {
   display: grid;
   grid-template-rows: auto repeat(3, 48vh) 1fr;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "nav nav" "histHero histHero" "hist hist" "videoH videoH" "histFooter histFooter"; }
+  grid-template-areas: "nav nav"
+ "histHero histHero"
+ "hist hist"
+ "videoH videoH"
+ "histFooter histFooter"; }
 
 .escrGrid {
   background-color: #e7feff;
@@ -72,7 +80,10 @@ nav {
   display: grid;
   grid-template-rows: auto 55vh 48vh 1fr;
   grid-template-columns: 45% 55%;
-  grid-template-areas: "nav nav" "escrHero escrHero" "escritoresTitle escritores" "escrFooter escrFooter"; }
+  grid-template-areas: "nav nav"
+ "escrHero escrHero"
+ "escritoresTitle escritores"
+ "escrFooter escrFooter"; }
 
 .loginGrid {
   background-color: #81D4BD;
@@ -82,7 +93,10 @@ nav {
   justify-items: center;
   grid-template-rows: auto 40vh 52.3vh auto;
   grid-template-columns: 1fr;
-  grid-template-areas: "nav" "loginHero" "login" "loginFooter"; }
+  grid-template-areas: "nav"
+ "loginHero"
+ "login"
+ "loginFooter"; }
 
 .hero {
   grid-area: hero;
@@ -492,21 +506,44 @@ ul li {
   div#imgHero {
     display: none; }
   .indexGrid {
-    grid-template-areas: 'nav nav nav' 'hero hero hero' 'tendencias tendencias tendencias' 'publicaciones publicaciones publicaciones' 'topicos topicos topicos' 'footer footer footer'; } }
+    grid-template-areas: 'nav nav nav'
+ 'hero hero hero'
+ 'publicaciones publicaciones publicaciones'
+ 'topicos topicos topicos'
+ 'footer footer footer'; }
+    .indexGrid .tendencias {
+      display: none; }
+    .indexGrid .publicaciones {
+      margin-top: .5em; }
+    .indexGrid .hero {
+      border-bottom: black solid 1px; } }
 
 @media only screen and (min-width: 721px) {
   body {
     font-size: 14px; }
   .indexGrid {
-    grid-template-areas: 'nav nav nav' 'hero hero hero' 'tendencias tendencias tendencias' 'publicaciones publicaciones publicaciones' 'topicos topicos topicos' 'footer footer footer'; }
+    grid-template-areas: 'nav nav nav'
+ 'hero hero hero'
+ 'tendencias tendencias tendencias'
+ 'publicaciones publicaciones publicaciones'
+ 'topicos topicos topicos'
+ 'footer footer footer'; }
   .indexGrid aside ol {
     justify-content: start;
     align-self: start; }
   .indexGrid aside {
-    min-height: 9.375em; } }
+    min-height: 9.375em; }
+  .tendencias .tendencias__ol {
+    grid-template-columns: 1fr 1fr; } }
 
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 16px; }
   .indexGrid {
-    grid-template-areas: 'nav nav nav' 'hero hero hero' 'tendencias tendencias tendencias' 'publicaciones publicaciones topicos' 'publicaciones publicaciones footer'; } }
+    grid-template-areas: 'nav nav nav'
+ 'hero hero hero'
+ 'tendencias tendencias tendencias'
+ 'publicaciones publicaciones topicos'
+ 'publicaciones publicaciones footer'; }
+  .tendencias .tendencias__ol {
+    grid-template-columns: 1fr 1fr 1fr; } }
