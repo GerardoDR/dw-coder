@@ -89,6 +89,7 @@ nav {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
+  align-items: center;
   column-gap: 1%;
   text-align: center;
   background: #81D4BD; }
@@ -299,6 +300,9 @@ ul li {
 .hero h1 {
   font-size: 3em; }
 
+.hero button {
+  margin-top: 1.5em; }
+
 #imgHero {
   display: flex;
   background: linear-gradient(to left, #602626, #FFD1B7); }
@@ -347,7 +351,7 @@ ul li {
     margin-bottom: 2%; }
   .publicaciones__articulo .articulo__contenido {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 1%;
     width: 93%; }
   .publicaciones__articulo .articulo__contenido--order-width50 {

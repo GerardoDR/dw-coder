@@ -87,6 +87,7 @@ nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
+    align-items: center;
     column-gap: 1%;
     text-align: center;
     background:$verde4;
