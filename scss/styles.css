@@ -266,6 +266,31 @@ nav {
   border-top: 2px solid #042B33;
   background-color: #602626; }
 
+.errorpageGrid {
+  display: grid;
+  grid-template-rows: auto 92.5vh 1fr;
+  grid-template-areas: "nav" "errorMain" "errorFooter"; }
+
+.errorpage__nav {
+  grid-area: nav;
+  background-color: #e7feff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid black;
+  z-index: 1;
+  height: 100%;
+  padding-top: 2px; }
+
+.errorpage__main {
+  grid-area: errorMain;
+  text-align: center;
+  margin-top: 10vh; }
+
+.errorpage__footer {
+  grid-area: errorFooter;
+  background-color: #FFD1B7;
+  border-top: solid #042B33 2px; }
+
 /* modificadores */
 button:hover {
   color: #3B9199;
@@ -488,6 +513,14 @@ ul li {
 
 .loginFooter a {
   color: #FFD1B7; }
+
+.background-errorpage {
+  background-image: url(../assets/error.gif);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.errorpage__main .errorpage__main__home {
+  color: #81D4BD; }
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 720px) {

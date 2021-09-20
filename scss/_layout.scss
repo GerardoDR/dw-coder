@@ -333,3 +333,34 @@ nav {
     border-top: 2px solid $verde1;
     background-color: $marron;
 }
+
+// ERROR 404
+
+.errorpageGrid{
+    display: grid;
+    grid-template-rows: auto 92.5vh 1fr;
+    grid-template-areas:  
+    "nav"
+    "errorMain"
+    "errorFooter";
+}
+.errorpage__nav{
+        grid-area: nav;
+        background-color: $fondo;
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid black;
+        z-index: 1;
+        height: 100%;
+        padding-top: 2px;
+}
+.errorpage__main{
+    grid-area: errorMain;
+    text-align: center;
+    margin-top: 10vh;
+}
+.errorpage__footer{
+    grid-area: errorFooter;
+    background-color: $naranja;
+    border-top: solid $verde1 2px;
+}

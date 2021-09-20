@@ -53,7 +53,8 @@ ul li {
 .hero h1 {
     font-size: 3em;
 }
-.hero button{
+
+.hero button {
     margin-top: 1.5em;
 }
 
@@ -70,14 +71,14 @@ ul li {
 
 /// index__tendencias /
 
-@for $i from 1 through 6{
+@for $i from 1 through 6 {
 
-.tendencias__ol--ico#{$i}{
-    list-style-image: url(../assets/iconos/#{$i}.svg);
+    .tendencias__ol--ico#{$i} {
+        list-style-image: url(../assets/iconos/#{$i}.svg);
     }
 }
 
-.tendencias__ol__h3--caps{
+.tendencias__ol__h3--caps {
     text-transform: capitalize;
 }
 
@@ -90,32 +91,39 @@ ul li {
     background-color: #81d4bc9c;
     color: rgb(32, 32, 32);
     overflow: hidden;
+
     .publicaciones__articulo--ml {
         margin-left: 2%;
         margin-top: 2%;
         width: 65%;
     }
-    .publicaciones__articulo--marron{
+
+    .publicaciones__articulo--marron {
         color: $marron;
     }
+
     .publicaciones__articulo--ml-10-mb-2 {
         margin-left: 10%;
         margin-bottom: 2%;
     }
+
     .articulo__contenido {
         display: flex;
         justify-content: space-between;
         margin: 1%;
         width: 93%;
-    }    
+    }
+
     .articulo__contenido--order-width50 {
         order: -1;
         width: 50%;
     }
+
     .articulo__contenido--mx {
         margin-left: 1%;
         margin-right: 2%;
     }
+
     .articulo__contenido--161px {
         border-radius: 5px;
         border-style: solid;
@@ -135,7 +143,7 @@ ul li {
 ///////////////////////// NUESTRAHISTORIA /
 
 // nuestrahistoria__hist /
-.hist img{
+.hist img {
     border: 1px solid $marron;
     height: auto;
     max-width: 15%;
@@ -143,14 +151,14 @@ ul li {
     /* reemplazar esta imagen */
 }
 
-.hist p{
+.hist p {
     height: 60%;
     border-right: 1px solid $verde1;
     padding-right: 3em;
 }
 
 // nuestrahistoria__histvideoH /
-.videoH video{
+.videoH video {
     height: 100%;
     max-width: 75%;
     padding: 1em;
@@ -163,14 +171,15 @@ ul li {
 #memHero h1 {
     font-size: 5em;
 }
-#memHero button{
+
+#memHero button {
     height: 100%;
     width: auto;
 }
 
 // membresía__haceteMiembro /
 
-#elem3::before{
+#elem3::before {
     background-image: url(../assets/letters-of-lead-1426501-1279x957.jpg);
     background-repeat: no-repeat;
     content: "";
@@ -183,13 +192,13 @@ ul li {
     opacity: 0.6;
 }
 
-#elem3 h3{
+#elem3 h3 {
     color: #042B33;
     position: relative;
     text-align: center;
 }
 
-#elem3 button{
+#elem3 button {
     position: relative;
     /* TIENE QUE ESTAR RELATIVE PARA QUE NO TOME OPACITY */
     height: 100%;
@@ -201,55 +210,61 @@ ul li {
 
 // escribir__hero /
 
-.escrHero h1{
-    color:#042B33;
+.escrHero h1 {
+    color: #042B33;
     font-size: 2.5em;
     align-self: flex-start;
 }
-.escrHero p{
+
+.escrHero p {
     align-self: flex-start;
     max-width: 70%;
 }
-.escrHero a{
+
+.escrHero a {
     align-self: center;
 }
-.escrHero a button{
+
+.escrHero a button {
     height: 4rem;
     width: 13rem;
 }
-.escrHero img{
+
+.escrHero img {
     height: 100%;
-    max-width:55vw;
+    max-width: 55vw;
 }
 
 // escribir__tituloEscritores /
 
-.escrHero #escrHeroTitle{
+.escrHero #escrHeroTitle {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border-right:2px solid $marron;
+    border-right: 2px solid $marron;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 // escribir__escritores /
 
-.escritores ul{
-    display:flex;
+.escritores ul {
+    display: flex;
     flex-direction: column;
     font-size: 1.5em;
     border-top: 1px solid $naranja;
     height: 100%;
 }
-.escritores ul li{
+
+.escritores ul li {
     display: flex;
     align-items: center;
     border-bottom: 1px solid $naranja;
     height: 20%;
     color: #81D4BD;
 }
-.escritores img{
+
+.escritores img {
     border-radius: 3rem;
     margin-right: 1rem;
     height: 100%;
@@ -259,21 +274,23 @@ ul li {
 
 // login__nav /
 
-.loginGrid nav{
+.loginGrid nav {
     justify-self: stretch;
     border-bottom: 1px solid $naranja;
+
     img {
         vertical-align: inherit;
     }
-    ul{
-        margin:0;
+
+    ul {
+        margin: 0;
         padding-left: 0;
     }
 }
 
 // login__form /
 
-.login__form-title{
+.login__form-title {
     margin-bottom: 5%;
     display: flex;
     flex-wrap: nowrap;
@@ -285,12 +302,24 @@ ul li {
     --animate-delay: 1s;
 }
 
-.colorBoton{
-    background-color: $marron
+.colorBoton {
+    background-color: $marron;
 }
 
 // login__footer /
 
-.loginFooter a{
+.loginFooter a {
     color: $naranja;
+}
+
+// ERROR 404
+
+.background-errorpage{
+    background-image: url(../assets/error.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.errorpage__main .errorpage__main__home {
+    color: $verde4;
 }
