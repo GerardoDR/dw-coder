@@ -8,7 +8,7 @@
     "build-css": "node-sass --include-path scss scss/styles.scss scss/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Gerardo Rodriguez",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
