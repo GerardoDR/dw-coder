@@ -18,16 +18,19 @@ naranjas
 
 /* MEDIA QUERY */
 
-@media only screen and (max-width: 720px){
-    body{
+@media only screen and (max-width: 720px) {
+    body {
         font-size: 13px;
     }
+
     .hero {
         grid-template-columns: 1fr;
     }
-    div#imgHero{
+
+    div#imgHero {
         display: none;
     }
+
     .indexGrid {
         grid-template-areas:
             'nav nav nav'
@@ -35,30 +38,36 @@ naranjas
             'publicaciones publicaciones publicaciones'
             'topicos topicos topicos'
             'footer footer footer';
-        .tendencias{
+
+        .tendencias {
             display: none;
         }
-        .publicaciones{
+
+        .publicaciones {
             margin-top: .5em;
         }
-        .hero{
+
+        .hero {
             border-bottom: black solid 1px;
         }
     }
-    .histGrid{
+
+    .histGrid {
         margin-top: 2px;
         margin-bottom: 2em;
         grid-template-rows: auto 48vh 70vh 1fr !important;
     }
+
     .hist p {
         height: 95%;
     }
 }
 
-@media only screen and (min-width: 721px){
-    body{
+@media only screen and (min-width: 721px) {
+    body {
         font-size: 14px;
     }
+
     .indexGrid {
         grid-template-areas:
             'nav nav nav'
@@ -68,42 +77,49 @@ naranjas
             'topicos topicos topicos'
             'footer footer footer';
     }
-    .indexGrid aside ol{
-        justify-content:start;
+
+    .indexGrid aside ol {
+        justify-content: start;
         align-self: start;
     }
-    .indexGrid aside{
+
+    .indexGrid aside {
         min-height: 9.375em;
     }
+
     .tendencias {
         .tendencias__ol {
-        grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
-    .histGrid{
-        grid-template-columns: 70% 30%;
-        grid-template-rows: auto repeat(2, 48vh) 1fr;
-    }
 
-@media only screen and (min-width: 1024px){
-    body{
+.histGrid {
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto repeat(2, 48vh) 1fr;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
         font-size: 16px;
     }
+
     .indexGrid {
         grid-template-areas:
-        'nav nav nav'
-        'hero hero hero'
-        'tendencias tendencias tendencias'
-        'publicaciones publicaciones topicos'
-        'publicaciones publicaciones footer';
+            'nav nav nav'
+            'hero hero hero'
+            'tendencias tendencias tendencias'
+            'publicaciones publicaciones topicos'
+            'publicaciones publicaciones footer';
     }
+
     .tendencias {
         .tendencias__ol {
-        grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
-    .histGrid{
+
+    .histGrid {
         grid-template-columns: 60% 40%;
     }
 }

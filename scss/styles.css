@@ -22,9 +22,8 @@ body {
 a {
   text-decoration: none;
   color: #042B33; }
-
-a:hover {
-  text-decoration: underline; }
+  a:hover {
+    text-decoration: underline; }
 
 a#logoHome:hover {
   text-decoration: none; }

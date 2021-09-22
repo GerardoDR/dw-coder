@@ -200,9 +200,13 @@ nav {
 
 /////////////////////////////////////////////// MEMBRESÍA /
 
+// membresía__nav
+
 .memGrid nav {
     justify-self: stretch;
 }
+
+// membresía__hero
 
 #memHero {
     width: 100%;
@@ -212,7 +216,7 @@ nav {
     border-bottom: 2px solid $marron;
 }
 
-// membresía__COLUMNA1 /
+// membresía__COLUMNA1
 #elem1 {
     width: 100%;
     height: 100%;
@@ -223,7 +227,7 @@ nav {
     justify-content: space-evenly;
 }
 
-// membresía__COLUMNA2 /
+// membresía__COLUMNA2
 #elem2 {
     width: 100%;
     height: 100%;
@@ -233,7 +237,7 @@ nav {
     justify-content: space-evenly;
 }
 
-// membresía_haceteMiembro /
+// membresía_haceteMiembro
 
 #elem3 {
     width: 100%;
@@ -248,7 +252,7 @@ nav {
     justify-content: center;
 }
 
-// membresía__footer /
+// membresía__footer
 
 #elem4 {
     width: 100%;
@@ -258,7 +262,7 @@ nav {
     border-top: 2px solid $marron;
 }
 
-/////////////////////////////////////////////// ESCRIBIR /
+/////////////////////////////////////////////// ESCRIBIR
 
 // escribir__hero /
 .escrHero{
@@ -270,7 +274,7 @@ nav {
     align-items: space-around;
 }
 
-// escribir__tituloEscritores /
+// escribir__tituloEscritores
 
 .escritoresTitle{
     grid-area: escritoresTitle;
@@ -279,14 +283,14 @@ nav {
     color: $fondo;
 }
 
-// escribir__escritores /
+// escribir__escritores
 
 .escritores {
     grid-area: escritores;
     background-color:$verde1;
 }
 
-// escribir__footer /
+// escribir__footer
 
 .escrFooter{
     grid-area: escrFooter;
@@ -297,7 +301,7 @@ nav {
 
 }
 
-//////////////////////////////////////////////// LOGIN /
+//////////////////////////////////////////////// LOGIN
 
 // login__hero /
 

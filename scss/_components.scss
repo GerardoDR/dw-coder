@@ -183,7 +183,7 @@ ul li {
 }
 
 #elem3 h3 {
-    color: #042B33;
+    color: $verde1;
     position: relative;
     text-align: center;
 }
@@ -201,7 +201,7 @@ ul li {
 // escribir__hero /
 
 .escrHero h1 {
-    color: #042B33;
+    color: $verde1;
     font-size: 2.5em;
     align-self: flex-start;
 }
@@ -251,7 +251,7 @@ ul li {
     align-items: center;
     border-bottom: 1px solid $naranja;
     height: 20%;
-    color: #81D4BD;
+    color: $verde4;
 }
 
 .escritores img {
