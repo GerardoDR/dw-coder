@@ -143,25 +143,15 @@ ul li {
 ///////////////////////// NUESTRAHISTORIA /
 
 // nuestrahistoria__hist /
-.hist img {
-    border: 1px solid $marron;
-    height: auto;
-    max-width: 15%;
-    margin-left: 3em;
-    /* reemplazar esta imagen */
+.hist iframe {
+    height: 100%;
+    max-width: 50%;
 }
 
 .hist p {
-    height: 60%;
-    border-right: 1px solid $verde1;
-    padding-right: 3em;
-}
-
-// nuestrahistoria__histvideoH /
-.videoH video {
-    height: 100%;
-    max-width: 75%;
-    padding: 1em;
+    height: 80%;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 //////////////////////////////////////// MEMBRESÍA /

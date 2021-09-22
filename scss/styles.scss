@@ -24,7 +24,6 @@ naranjas
     }
     .hero {
         grid-template-columns: 1fr;
-
     }
     div#imgHero{
         display: none;
@@ -36,8 +35,6 @@ naranjas
             'publicaciones publicaciones publicaciones'
             'topicos topicos topicos'
             'footer footer footer';
-            // 'tendencias tendencias tendencias'
-    
         .tendencias{
             display: none;
         }
@@ -47,6 +44,14 @@ naranjas
         .hero{
             border-bottom: black solid 1px;
         }
+    }
+    .histGrid{
+        margin-top: 2px;
+        margin-bottom: 2em;
+        grid-template-rows: auto 48vh 70vh 1fr !important;
+    }
+    .hist p {
+        height: 95%;
     }
 }
 
@@ -63,7 +68,6 @@ naranjas
             'topicos topicos topicos'
             'footer footer footer';
     }
-    
     .indexGrid aside ol{
         justify-content:start;
         align-self: start;
@@ -77,6 +81,10 @@ naranjas
         }
     }
 }
+    .histGrid{
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto repeat(2, 48vh) 1fr;
+    }
 
 @media only screen and (min-width: 1024px){
     body{
@@ -94,5 +102,8 @@ naranjas
         .tendencias__ol {
         grid-template-columns: 1fr 1fr 1fr;
         }
+    }
+    .histGrid{
+        grid-template-columns: 60% 40%;
     }
 }

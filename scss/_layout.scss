@@ -40,13 +40,12 @@ nav {
     background-color: $fondo;
     margin-left: 2px;
     display: grid;
-    grid-template-rows: auto repeat(3, 48vh) 1fr;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: auto repeat(2, 48vh) 1fr;
+    grid-template-columns: 60% 40%;
     grid-template-areas:
         "nav nav"
         "histHero histHero"
-        "hist hist"
-        "videoH videoH"
+        "hist histV"
         "histFooter histFooter";
 }
 
@@ -178,22 +177,15 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     background-color: $naranja;
     border-top: 2px solid $verde1;
-    border-bottom: 2px solid $marron;
 }
-
-// hist__videoH /
-
-.videoH{
-    grid-area: videoH;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background:$verde4;
-    color: $marron;
-    padding-left: 1em;
+.histV{
+    grid-area: histV;
+    background-color: white;
+    padding-left: 2px;
+    border-top: 2px solid $verde1;
+    border-left: 1px solid $verde1;
 }
 
 // hist__footer /
