@@ -223,7 +223,9 @@ nav {
 
 .escritoresTitle {
   grid-area: escritoresTitle;
-  font-size: 2em;
+  font-size: 1.3em;
+  padding-left: 1rem;
+  padding-top: 1rem;
   background-color: #042B33;
   color: #e7feff; }
 
