@@ -15,7 +15,6 @@ naranjas
 @import "layout";
 @import "components";
 
-
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 720px) {
@@ -33,18 +32,18 @@ naranjas
 
     .indexGrid {
         grid-template-areas:
-            'nav nav nav'
-            'hero hero hero'
-            'publicaciones publicaciones publicaciones'
-            'topicos topicos topicos'
-            'footer footer footer';
+            "nav nav nav"
+            "hero hero hero"
+            "publicaciones publicaciones publicaciones"
+            "topicos topicos topicos"
+            "footer footer footer";
 
         .tendencias {
             display: none;
         }
 
         .publicaciones {
-            margin-top: .5em;
+            margin-top: 0.5em;
         }
 
         .hero {
@@ -61,8 +60,9 @@ naranjas
     .hist p {
         height: 95%;
     }
+
     .escrHero img {
-        display:none;
+        display: none;
     }
 }
 
@@ -73,12 +73,12 @@ naranjas
 
     .indexGrid {
         grid-template-areas:
-            'nav nav nav'
-            'hero hero hero'
-            'tendencias tendencias tendencias'
-            'publicaciones publicaciones publicaciones'
-            'topicos topicos topicos'
-            'footer footer footer';
+            "nav nav nav"
+            "hero hero hero"
+            "tendencias tendencias tendencias"
+            "publicaciones publicaciones publicaciones"
+            "topicos topicos topicos"
+            "footer footer footer";
     }
 
     .indexGrid aside ol {
@@ -109,11 +109,11 @@ naranjas
 
     .indexGrid {
         grid-template-areas:
-            'nav nav nav'
-            'hero hero hero'
-            'tendencias tendencias tendencias'
-            'publicaciones publicaciones topicos'
-            'publicaciones publicaciones footer';
+            "nav nav nav"
+            "hero hero hero"
+            "tendencias tendencias tendencias"
+            "publicaciones publicaciones topicos"
+            "publicaciones publicaciones footer";
     }
 
     .tendencias {
