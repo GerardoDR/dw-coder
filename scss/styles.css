@@ -616,6 +616,10 @@ ul li {
   width: 100%;
 }
 
+.login a {
+  background-color: #602626;
+}
+
 .animate__animated.animate__fadeIn {
   --animate-delay: 1s;
 }
