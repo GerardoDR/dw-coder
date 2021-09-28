@@ -9,11 +9,6 @@ button:hover {
     font-weight: bold;
 }
 
-input:hover {
-    color: $verde3;
-    font-weight: bold;
-}
-
 /// nav /
 
 nav img {
@@ -37,6 +32,7 @@ ul li {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .hero__h1--font {
@@ -54,10 +50,6 @@ ul li {
     font-size: 3em;
 }
 
-.hero button {
-    margin-top: 1.5em;
-}
-
 #imgHero {
     display: flex;
     background: linear-gradient(to left, $marron, $naranja);
@@ -71,16 +63,29 @@ ul li {
 
 /// index__tendencias /
 
-@for $i from 1 through 6 {
+.tendencias__ol{
 
-    .tendencias__ol--ico#{$i} {
-        list-style-image: url(../assets/iconos/#{$i}.svg);
+    @for $i from 1 through 6 {
+
+        .tendencias__ol--ico#{$i} {
+            list-style-image: url(../assets/iconos/#{$i}.svg);
+            &:hover{
+                transform: scale(1.015,1.015);
+                transition: transform .4s ease-in-out; 
+                border-radius: 5px;
+                background-color:rgba(129, 212, 189, 0.3);
+                box-shadow: .2em .2em .1em $marron;
+            }
+        }
+    }
+
+    .tendencias__ol__h3--caps {
+        text-transform: capitalize;
+        font-weight:300;
     }
 }
 
-.tendencias__ol__h3--caps {
-    text-transform: capitalize;
-}
+
 
 /// index__publicaciones /
 
@@ -131,6 +136,10 @@ ul li {
         height: 86%;
         width: 161px;
     }
+    &:hover{
+        transform: scale(1.02,1.02);
+        transition: transform .5s ease-in-out;
+    }
 }
 
 /// index__footer /
@@ -158,18 +167,18 @@ ul li {
 
 // membresía__hero /
 
-#memHero h1 {
+.memHero h1 {
     font-size: 5em;
 }
 
-#memHero button {
+.memHero button {
     height: 100%;
     width: auto;
 }
 
 // membresía__haceteMiembro /
 
-#elem3::before {
+.promo::before {
     background-image: url(../assets/letters-of-lead-1426501-1279x957.jpg);
     background-repeat: no-repeat;
     content: "";
@@ -179,21 +188,22 @@ ul li {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
-#elem3 h3 {
+.promo h3 {
     color: $verde1;
     position: relative;
     text-align: center;
+    font-size: 3em;
 }
 
-#elem3 button {
+.promo a {
     position: relative;
     /* TIENE QUE ESTAR RELATIVE PARA QUE NO TOME OPACITY */
-    height: 100%;
-    width: auto;
-}
+    @extend .boton1;
+    background-color: $marron; 
+ }
 
 
 /////////////////////////////////////// ESCRIBIR /
@@ -213,11 +223,7 @@ ul li {
 
 .escrHero a {
     align-self: center;
-}
-
-.escrHero a button {
-    height: 4rem;
-    width: 13rem;
+    background-color: $marron;
 }
 
 .escrHero img {
@@ -285,7 +291,6 @@ ul li {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-
 }
 
 .animate__animated.animate__fadeIn {
