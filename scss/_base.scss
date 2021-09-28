@@ -44,9 +44,9 @@ a.boton1 {
     color: #FFFFFF;
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
     text-align: center;
-    transition: all 0.2s;
     font-weight: 300;
     &:hover {
         border-color: $naranja;
+        transition: border-color 0.2s;
     }
 }

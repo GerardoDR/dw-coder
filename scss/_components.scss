@@ -63,25 +63,26 @@ ul li {
 
 /// index__tendencias /
 
-.tendencias__ol{
+.tendencias__ol {
 
     @for $i from 1 through 6 {
 
         .tendencias__ol--ico#{$i} {
             list-style-image: url(../assets/iconos/#{$i}.svg);
-            &:hover{
-                transform: scale(1.015,1.015);
-                transition: transform .4s ease-in-out; 
+
+            &:hover {
+                transform: scale(1.015, 1.015);
+                transition: transform .4s ease-in-out;
                 border-radius: 5px;
-                background-color:rgba(129, 212, 189, 0.3);
-                box-shadow: .2em .2em .1em $marron;
+                background-color: rgba(129, 212, 189, 0.5);
+                box-shadow: .3em .3em .1em $marron;
             }
         }
     }
 
     .tendencias__ol__h3--caps {
         text-transform: capitalize;
-        font-weight:300;
+        font-weight: 300;
     }
 }
 
@@ -136,9 +137,10 @@ ul li {
         height: 86%;
         width: 161px;
     }
-    &:hover{
-        transform: scale(1.02,1.02);
-        transition: transform .5s ease-in-out;
+
+    &:hover {
+        transform: scale(1.01, 1.01);
+        transition: transform .4s ease-in-out;
     }
 }
 
@@ -202,8 +204,8 @@ ul li {
     position: relative;
     /* TIENE QUE ESTAR RELATIVE PARA QUE NO TOME OPACITY */
     @extend .boton1;
-    background-color: $marron; 
- }
+    background-color: $marron;
+}
 
 
 /////////////////////////////////////// ESCRIBIR /
@@ -293,7 +295,7 @@ ul li {
     width: 100%;
 }
 
-.login a{
+.login a {
     background-color: $marron;
 }
 
@@ -313,7 +315,7 @@ ul li {
 
 // ERROR 404
 
-.background-errorpage{
+.background-errorpage {
     background-image: url(../assets/error.gif);
     background-repeat: no-repeat;
     background-position: center;
