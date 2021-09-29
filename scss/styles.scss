@@ -1,14 +1,3 @@
-/* New Palette
-verdes
-#042B33
-#166166
-#3B9199
-#81D4BD
-naranjas
-#602626
-#FFD1B7
-*/
-
 /* IMPORTS */
 
 @import "base";
@@ -17,7 +6,7 @@ naranjas
 
 /* MEDIA QUERY */
 
-@media only screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
     body {
         font-size: 13px;
     }
@@ -66,19 +55,9 @@ naranjas
     }
 }
 
-@media only screen and (min-width: 721px) {
+@media screen and (min-width: 721px) {
     body {
         font-size: 14px;
-    }
-
-    .indexGrid {
-        grid-template-areas:
-            "nav nav nav"
-            "hero hero hero"
-            "tendencias tendencias tendencias"
-            "publicaciones publicaciones publicaciones"
-            "topicos topicos topicos"
-            "footer footer footer";
     }
 
     .indexGrid aside ol {
@@ -102,18 +81,9 @@ naranjas
     grid-template-rows: auto repeat(2, 48vh) 1fr;
 }
 
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
         font-size: 16px;
-    }
-
-    .indexGrid {
-        grid-template-areas:
-            "nav nav nav"
-            "hero hero hero"
-            "tendencias tendencias tendencias"
-            "publicaciones publicaciones topicos"
-            "publicaciones publicaciones footer";
     }
 
     .tendencias {

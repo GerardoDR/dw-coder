@@ -17,6 +17,12 @@ nav {
     margin-left: 2px;
     grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+            "nav nav nav"
+            "hero hero hero"
+            "tendencias tendencias tendencias"
+            "publicaciones publicaciones topicos"
+            "publicaciones publicaciones footer";
     max-width: 118.75em;
 }
 
@@ -29,9 +35,9 @@ nav {
     grid-template-areas:
         "nav nav"
         "memHero memHero"
-        "elem1 elem2"
-        "elem3 elem3"
-        "elem4 elem4";
+        "feat1 feat2"
+        "promo promo"
+        "memFooter memFooter";
     justify-items: center;
     align-items: center;
 }
@@ -86,7 +92,7 @@ nav {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-    align-items: center;
+    // align-items: center;
     column-gap: 1%;
     text-align: center;
     background:$verde4;
@@ -106,10 +112,8 @@ nav {
         display: grid;
         list-style-position: inside;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.5em;
-        margin-left: 1.5em;
-        margin-top: 1.5em;
-        margin-bottom: 2.5em;
+        gap: 1em;
+        margin: 1.5em 1.5em 2.5em 1.5em;
         letter-spacing: 2px;
         word-spacing: 2px;
         line-height: 1.3;
@@ -182,7 +186,7 @@ nav {
 }
 .histV{
     grid-area: histV;
-    background-color: white;
+    background-color: #fefefe;
     padding-left: 2px;
     border-top: 2px solid $verde1;
     border-left: 1px solid $verde1;
@@ -208,7 +212,7 @@ nav {
 
 // membresía__hero
 
-#memHero {
+.memHero {
     width: 100%;
     height: 100%;
     grid-area: memHero;
@@ -216,35 +220,35 @@ nav {
     border-bottom: 2px solid $marron;
 }
 
-// membresía__COLUMNA1
-#elem1 {
+// membresía__features1
+.feat1 {
     width: 100%;
     height: 100%;
     padding: 1em;
-    grid-area: elem1;
+    grid-area: feat1;
     border-right: 2px solid $marron;
     background-color:$naranja;
     justify-content: space-evenly;
 }
 
-// membresía__COLUMNA2
-#elem2 {
+// membresía__features2
+.feat2 {
     width: 100%;
     height: 100%;
     padding: 1em;
-    grid-area: elem2;
+    grid-area: feat2;
     background-color:$naranja;
     justify-content: space-evenly;
 }
 
 // membresía_haceteMiembro
 
-#elem3 {
+.promo {
     width: 100%;
     height: 100%;
-    grid-area: elem3;
+    grid-area: promo;
     border-top: 2px solid $marron;
-    font-size: 3em;
+    // font-size: 3em;
     /* no quitar position: relative. importante para que funcione opacidad del fondo*/
     position: relative;
     display: flex;
@@ -254,9 +258,9 @@ nav {
 
 // membresía__footer
 
-#elem4 {
+.memFooter {
     width: 100%;
-    grid-area: elem4;
+    grid-area: memFooter;
     align-items: flex-start;
     justify-content: flex-end;
     border-top: 2px solid $marron;
@@ -323,6 +327,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .loginFooter{

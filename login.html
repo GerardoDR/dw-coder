@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="TOPICO, UNITE, INICIAR SESIÓN, ESCRIBIR, LEER">
-    <meta name="description" content="Unite a Topico. Publicá tus ideas sobre cualquier tema y conectate con millones de lectores de manera facil y gratuita.">
+    <meta name="description"
+        content="Unite a Topico. Publicá tus ideas sobre cualquier tema y conectate con millones de lectores de manera facil y gratuita.">
     <title>Topico - Unite.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <div class="loginGrid">
         <nav>
             <ul>
-                <li><a href="./index.html" id="logoHome"><img src="./assets/logoTopico.png" width="20" height="25" alt="Home"> |</a></li>
+                <li><a href="./index.html" id="logoHome"><img src="./assets/logoTopico.png" width="20" height="25"
+                            alt="Home"> |</a></li>
                 <li><a href="./nuestrahistoria.html">Nuestra historia</a> |</li>
                 <li><a href="./membresia.html">Membresía</a> |</li>
                 <li><a href="./escribir.html">Escribir</a> |</li>
@@ -31,23 +33,18 @@
         </div>
         <div class="login">
             <h2 class="animate__animated animate__slideInDown">Creá tu espacio.</h2>
-            <h3 class="login__form-title animate__animated animate__fadeIn animate__delay-1s">Contá tu historia, a tu manera y encontrá tu audiencia.</h3>
-            <button type="button" class="btn btn-outline-light btn-lg colorBoton" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                Iniciar sesión
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
+            <h3 class="login__form-title animate__animated animate__fadeIn animate__delay-1s">Contá tu historia, a tu
+                manera y encontrá tu audiencia.</h3>
+            <!-- boton personalizado -->
+            <a type="button" class="boton1" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Iniciar sesión</a>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header text-white" style="background-color:#602626;">
-                            <!-- agregado background-color y text-white -->
-                            <h5 class="modal-title" id="exampleModalLabel">Bienvenido/a</h5>
+                            <h5 class="modal-title " id="exampleModalToggleLabel">Bienvenido/a</h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                                 aria-label="Close"></button>
-                            <!-- agregado btn-close-white -->
                         </div>
                         <div class="modal-body" style="background-color:#e7feff;">
                             <main class="form-signin">
@@ -67,32 +64,53 @@
                                             <input type="checkbox" value="remember-me"> Recordame
                                         </label>
                                     </div>
-                                    <button class="w-100 btn btn-outline-dark btn-sm"
-                                        type="submit">Ingresar</button>
                                 </form>
                             </main>
                         </div>
                         <div class="modal-footer" style="background-color:#602626;">
-                            <button type="reset" class="btn btn-secondary"
-                                data-bs-dismiss="modal">Cerrar</button>
+                            <button class="w-100 btn btn-light btn-sm" data-bs-target="#exampleModalToggle2"
+                                data-bs-toggle="modal" data-bs-dismiss="modal" type="submit">Ingresar</button>
+                            <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:#FFD1B7;">
+                            <h5 class="modal-title" id="exampleModalToggleLabel2">Error</h5>
+                            <button type="reset" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="background-color:#e7feff;">
+                            Nuestros servidores están en mantenimiento en este momento. Para más información, por favor,
+                            contactarse con nuestro soporte técnico!
+                        </div>
+                        <div class="modal-footer" style="background-color:#FFD1B7;">
+                            <button type="reset" class="btn btn-light btn-sm" data-bs-dismiss="modal"
+                                aria-label="Close">Reintentar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <footer class="loginFooter">
-            <a href="../index.html">Home |</a>
-            <a href="ayuda"> Ayuda |</a>
-            <a href="escritores"> Escritores |</a>
-            <a href="blog"> Blog |</a>
-            <a href="carreras"> Carreras |</a>
-            <a href="privacidad"> Privacidad |</a>
-            <a href="terminos"> Términos |</a>
-            <a href="sobrenosotros"> Sobre nosotros</a>
+            <a href="./index.html">Home |</a>
+            <a href="./404.html"> Ayuda |</a>
+            <a href="./404.html"> Escritores |</a>
+            <a href="./404.html"> Blog |</a>
+            <a href="./404.html"> Carreras |</a>
+            <a href="./404.html"> Privacidad |</a>
+            <a href="./404.html"> Términos |</a>
+            <a href="./404.html"> Sobre nosotros</a>
         </footer>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
