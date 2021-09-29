@@ -520,11 +520,11 @@ ul li {
   div#imgHero {
     display: none; }
   .indexGrid {
-    grid-template-areas: 'nav nav nav' 'hero hero hero' 'publicaciones publicaciones publicaciones' 'topicos topicos topicos' 'footer footer footer'; }
+    grid-template-areas: "nav nav nav" "hero hero hero" "publicaciones publicaciones publicaciones" "topicos topicos topicos" "footer footer footer"; }
     .indexGrid .tendencias {
       display: none; }
     .indexGrid .publicaciones {
-      margin-top: .5em; }
+      margin-top: 0.5em; }
     .indexGrid .hero {
       border-bottom: black solid 1px; }
   .histGrid {
@@ -540,7 +540,7 @@ ul li {
   body {
     font-size: 14px; }
   .indexGrid {
-    grid-template-areas: 'nav nav nav' 'hero hero hero' 'tendencias tendencias tendencias' 'publicaciones publicaciones publicaciones' 'topicos topicos topicos' 'footer footer footer'; }
+    grid-template-areas: "nav nav nav" "hero hero hero" "tendencias tendencias tendencias" "publicaciones publicaciones publicaciones" "topicos topicos topicos" "footer footer footer"; }
   .indexGrid aside ol {
     justify-content: start;
     align-self: start; }
@@ -557,7 +557,7 @@ ul li {
   body {
     font-size: 16px; }
   .indexGrid {
-    grid-template-areas: 'nav nav nav' 'hero hero hero' 'tendencias tendencias tendencias' 'publicaciones publicaciones topicos' 'publicaciones publicaciones footer'; }
+    grid-template-areas: "nav nav nav" "hero hero hero" "tendencias tendencias tendencias" "publicaciones publicaciones topicos" "publicaciones publicaciones footer"; }
   .tendencias .tendencias__ol {
     grid-template-columns: 1fr 1fr 1fr; }
   .histGrid {
