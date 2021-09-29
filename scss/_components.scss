@@ -1,15 +1,25 @@
 /* modificadores */
 
-// generales /
+// generales 
 
-/// Botones /
+/// Topicos 
 
-button:hover {
-    color: $verde3;
+.topico:hover{
     font-weight: bold;
+    //efecto 'glow' en #topicos
+    text-shadow:
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px $naranja,
+        0 0 82px $naranja,
+        0 0 92px $naranja,
+        0 0 102px $naranja,
+        0 0 151px $naranja;
+    cursor: pointer;
 }
 
-/// nav /
+/// nav 
 
 nav img {
     width: 1.25em;
@@ -18,16 +28,18 @@ nav img {
     top: 0;
 }
 
-/// ul /
+/// ul 
 
 ul li {
+    //se usa en nav y footer
     display: inline-block;
     list-style-type: none;
 }
 
-/// otros/
+/// otros
 
 .flexCenter {
+    //afecta a index, membresia y nuestrahistoria
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +48,7 @@ ul li {
 }
 
 .hero__h1--font {
+    //afecta a index, membresia y nuestrahistoria
     background-color: $verde4;
     color: $marron;
     letter-spacing: 3px;
@@ -51,31 +64,38 @@ ul li {
 }
 
 #imgHero {
+    //gradiente para que quede mejor la imagen de hero por debajo de 850px
     display: flex;
     background: linear-gradient(to left, $marron, $naranja);
 }
 
 #imgHero img {
+    border-radius: .1em;
     margin: auto;
-    width: 90%;
-    opacity: 0.5;
+    width: 100%;
+    opacity: 0.7;
 }
 
 /// index__tendencias /
 
 .tendencias__ol {
+    p{
+        margin-top: .5em;
+        margin-bottom:.5em;
+    }
 
     @for $i from 1 through 6 {
 
         .tendencias__ol--ico#{$i} {
             list-style-image: url(../assets/iconos/#{$i}.svg);
+            padding: .5em;
 
             &:hover {
-                transform: scale(1.015, 1.015);
-                transition: transform .4s ease-in-out;
+                transform: scale(1.005, 1.005);
+                transition: transform .2s ease-in-out;
                 border-radius: 5px;
                 background-color: rgba(129, 212, 189, 0.5);
-                box-shadow: .3em .3em .1em $marron;
+                box-shadow: 0 0 .3em $naranja;
             }
         }
     }
@@ -111,6 +131,8 @@ ul li {
     .publicaciones__articulo--ml-10-mb-2 {
         margin-left: 10%;
         margin-bottom: 2%;
+        //agregado de estilo a #topicos en articulos
+        @extend .topico;
     }
 
     .articulo__contenido {
@@ -139,8 +161,9 @@ ul li {
     }
 
     &:hover {
-        transform: scale(1.01, 1.01);
-        transition: transform .4s ease-in-out;
+        transform: scale(1.005, 1.005);
+        transition: transform .2s ease-in-out;
+        box-shadow: 0 0 .5em $marron;
     }
 }
 
@@ -204,7 +227,9 @@ ul li {
     position: relative;
     /* TIENE QUE ESTAR RELATIVE PARA QUE NO TOME OPACITY */
     @extend .boton1;
+    //agregado estilo a #topicos
     background-color: $marron;
+    //color de boton 'hacete miembro'
 }
 
 
@@ -226,11 +251,13 @@ ul li {
 .escrHero a {
     align-self: center;
     background-color: $marron;
+    //color boton 'comenza a escribir'
 }
 
 .escrHero img {
     height: 100%;
     max-width: 55vw;
+    //evita que se estire la imagen hasta llegar al breakpoint
 }
 
 // escribir__tituloEscritores /
@@ -252,6 +279,7 @@ ul li {
     font-size: 1.5em;
     border-top: 1px solid $naranja;
     height: 100%;
+    //layout columna escritores y borde superior
 }
 
 .escritores ul li {
@@ -260,12 +288,14 @@ ul li {
     border-bottom: 1px solid $naranja;
     height: 20%;
     color: $verde4;
+    //nombres de escritores
 }
 
 .escritores img {
     border-radius: 3rem;
     margin-right: 1rem;
     height: 100%;
+    //avatares
 }
 
 ////////////////////////////// LOGIN /
@@ -273,6 +303,7 @@ ul li {
 // login__nav /
 
 .loginGrid nav {
+    //retoques al nav para login
     justify-self: stretch;
     border-bottom: 1px solid $naranja;
 
@@ -297,14 +328,11 @@ ul li {
 
 .login a {
     background-color: $marron;
+    /*color boton iniciar sesion*/
 }
 
 .animate__animated.animate__fadeIn {
     --animate-delay: 1s;
-}
-
-.colorBoton {
-    background-color: $marron;
 }
 
 // login__footer /
