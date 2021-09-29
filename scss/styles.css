@@ -75,7 +75,7 @@ nav {
   background-color: #e7feff;
   margin-left: 2px;
   display: grid;
-  grid-template-rows: auto 55vh 48vh 1fr;
+  grid-template-rows: auto 46vh 46vh 1fr;
   grid-template-columns: 45% 55%;
   grid-template-areas: "nav nav" "escrHero escrHero" "escritoresTitle escritores" "escrFooter escrFooter"; }
 
@@ -85,7 +85,7 @@ nav {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-rows: auto 40vh 52.3vh auto;
+  grid-template-rows: auto 40vh 51.7vh auto;
   grid-template-columns: 1fr;
   grid-template-areas: "nav" "loginHero" "login" "loginFooter"; }
 
