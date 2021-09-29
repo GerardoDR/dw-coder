@@ -337,7 +337,7 @@ nav {
 }
 
 /* modificadores */
-.topico:hover, .publicaciones__articulo .publicaciones__articulo--ml-10-mb-2:hover {
+.topico:hover, .publicaciones .publicaciones__articulo .publicaciones__articulo--ml-10-mb-2:hover {
   font-weight: bold;
   text-shadow: 0 0 7px white, 0 0 10px white, 0 0 21px white, 0 0 42px #FFD1B7, 0 0 82px #FFD1B7, 0 0 92px #FFD1B7, 0 0 102px #FFD1B7, 0 0 151px #FFD1B7;
   cursor: pointer;
@@ -386,82 +386,89 @@ ul li {
   opacity: 0.7;
 }
 
-.tendencias__ol p {
+.tendencias h2 {
+  margin-top: 0.5em;
+}
+.tendencias .tendencias__ol p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico1 {
+.tendencias .tendencias__ol .tendencias__ol--ico1 {
   list-style-image: url(../assets/iconos/1.svg);
   padding: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico1:hover {
+.tendencias .tendencias__ol .tendencias__ol--ico1:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   border-radius: 5px;
   background-color: rgba(129, 212, 189, 0.5);
   box-shadow: 0 0 0.3em #FFD1B7;
 }
-.tendencias__ol .tendencias__ol--ico2 {
+.tendencias .tendencias__ol .tendencias__ol--ico2 {
   list-style-image: url(../assets/iconos/2.svg);
   padding: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico2:hover {
+.tendencias .tendencias__ol .tendencias__ol--ico2:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   border-radius: 5px;
   background-color: rgba(129, 212, 189, 0.5);
   box-shadow: 0 0 0.3em #FFD1B7;
 }
-.tendencias__ol .tendencias__ol--ico3 {
+.tendencias .tendencias__ol .tendencias__ol--ico3 {
   list-style-image: url(../assets/iconos/3.svg);
   padding: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico3:hover {
+.tendencias .tendencias__ol .tendencias__ol--ico3:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   border-radius: 5px;
   background-color: rgba(129, 212, 189, 0.5);
   box-shadow: 0 0 0.3em #FFD1B7;
 }
-.tendencias__ol .tendencias__ol--ico4 {
+.tendencias .tendencias__ol .tendencias__ol--ico4 {
   list-style-image: url(../assets/iconos/4.svg);
   padding: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico4:hover {
+.tendencias .tendencias__ol .tendencias__ol--ico4:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   border-radius: 5px;
   background-color: rgba(129, 212, 189, 0.5);
   box-shadow: 0 0 0.3em #FFD1B7;
 }
-.tendencias__ol .tendencias__ol--ico5 {
+.tendencias .tendencias__ol .tendencias__ol--ico5 {
   list-style-image: url(../assets/iconos/5.svg);
   padding: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico5:hover {
+.tendencias .tendencias__ol .tendencias__ol--ico5:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   border-radius: 5px;
   background-color: rgba(129, 212, 189, 0.5);
   box-shadow: 0 0 0.3em #FFD1B7;
 }
-.tendencias__ol .tendencias__ol--ico6 {
+.tendencias .tendencias__ol .tendencias__ol--ico6 {
   list-style-image: url(../assets/iconos/6.svg);
   padding: 0.5em;
 }
-.tendencias__ol .tendencias__ol--ico6:hover {
+.tendencias .tendencias__ol .tendencias__ol--ico6:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   border-radius: 5px;
   background-color: rgba(129, 212, 189, 0.5);
   box-shadow: 0 0 0.3em #FFD1B7;
 }
-.tendencias__ol .tendencias__ol__h3--caps {
+.tendencias .tendencias__ol .tendencias__ol__h3--caps {
   text-transform: capitalize;
   font-weight: 300;
 }
 
-.publicaciones__articulo {
+.publicaciones h3,
+.publicaciones form {
+  margin-top: 0.5em;
+}
+.publicaciones .publicaciones__articulo {
   margin: 1%;
   border-radius: 5px;
   border-style: none;
@@ -469,40 +476,40 @@ ul li {
   color: #202020;
   overflow: hidden;
 }
-.publicaciones__articulo .publicaciones__articulo--ml {
+.publicaciones .publicaciones__articulo .publicaciones__articulo--ml {
   margin-left: 2%;
   margin-top: 2%;
   width: 65%;
 }
-.publicaciones__articulo .publicaciones__articulo--marron {
+.publicaciones .publicaciones__articulo .publicaciones__articulo--marron {
   color: #602626;
 }
-.publicaciones__articulo .publicaciones__articulo--ml-10-mb-2 {
+.publicaciones .publicaciones__articulo .publicaciones__articulo--ml-10-mb-2 {
   margin-left: 10%;
   margin-bottom: 2%;
 }
-.publicaciones__articulo .articulo__contenido {
+.publicaciones .publicaciones__articulo .articulo__contenido {
   display: flex;
   justify-content: space-between;
   margin: 1%;
   width: 93%;
 }
-.publicaciones__articulo .articulo__contenido--order-width50 {
+.publicaciones .publicaciones__articulo .articulo__contenido--order-width50 {
   order: -1;
   width: 50%;
 }
-.publicaciones__articulo .articulo__contenido--mx {
+.publicaciones .publicaciones__articulo .articulo__contenido--mx {
   margin-left: 1%;
   margin-right: 2%;
 }
-.publicaciones__articulo .articulo__contenido--161px {
+.publicaciones .publicaciones__articulo .articulo__contenido--161px {
   border-radius: 5px;
   border-style: solid;
   border-color: #166166;
   height: 86%;
   width: 161px;
 }
-.publicaciones__articulo:hover {
+.publicaciones .publicaciones__articulo:hover {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 0.5em #602626;
