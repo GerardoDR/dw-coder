@@ -26,6 +26,8 @@ a {
     color: $verde1;
 
     &:hover {
+        color: $verde1;
+        //sobreescribe color hover de bootstrap en login
         text-decoration: underline;
     }
     &#logoHome:hover {
