@@ -527,7 +527,8 @@ ul li {
   align-items: center;
   border-bottom: 1px solid #FFD1B7;
   height: 20%;
-  color: #81D4BD; }
+  color: #81D4BD;
+  padding: .5em 0; }
 
 .escritores img {
   border-radius: 3rem;
