@@ -173,9 +173,7 @@ nav {
     grid-area: hist;
     text-align: center;
     height: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    min-height: 45vh;
     background-color: $naranja;
     border-top: 2px solid $verde1;
 }
