@@ -20,6 +20,11 @@ body {
     font-family: "Crete Round", sans-serif;
 }
 
+@mixin wdt-hgt($w, $h) {
+    width: $w;
+    height: $h;
+}
+
 // Links
 a {
     text-decoration: none;
@@ -30,6 +35,7 @@ a {
         //sobreescribe color hover de bootstrap en login
         text-decoration: underline;
     }
+
     &#logoHome:hover {
         text-decoration: none;
     }
@@ -47,6 +53,7 @@ a.boton1 {
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
     text-align: center;
     font-weight: 300;
+
     &:hover {
         border-color: $naranja;
         transition: border-color 0.2s;
