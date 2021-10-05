@@ -1,46 +1,53 @@
 /* modificadores */
 
-// generales /
+// generales 
 
-/// Botones /
+/// Topicos 
 
-button:hover {
-    color: $verde3;
+.topico:hover {
     font-weight: bold;
+    //efecto 'glow' en #topicos
+    text-shadow:
+        0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px $naranja,
+        0 0 82px $naranja,
+        0 0 92px $naranja,
+        0 0 102px $naranja,
+        0 0 151px $naranja;
+    cursor: pointer;
 }
 
-input:hover {
-    color: $verde3;
-    font-weight: bold;
-}
-
-/// nav /
+/// nav 
 
 nav img {
-    width: 1.25em;
-    height: auto;
+    @include wdt-hgt(1.25em, auto);
     position: relative;
     top: 0;
 }
 
-/// ul /
+/// ul 
 
 ul li {
+    //se usa en nav y footer
     display: inline-block;
     list-style-type: none;
 }
 
-/// otros/
+/// otros
 
 .flexCenter {
+    //afecta a index, membresia y nuestrahistoria
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .hero__h1--font {
-    /* height: 100%; */
+    //afecta a index, membresia y nuestrahistoria
     background-color: $verde4;
     color: $marron;
     letter-spacing: 3px;
@@ -52,67 +59,117 @@ ul li {
 /// index__hero /
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 #imgHero {
-    display: flex;
-    // height: auto;
-    // width: 100%;
     background: linear-gradient(to left, $marron, $naranja);
 }
 
 #imgHero img {
+    @include wdt-hgt(100%,100%);
+    border-radius: .1em;
     margin: auto;
-    width: 90%;
-    // height: 100%;
-    // width: 80%;
-    opacity: 0.5;
+    box-shadow: 0 0 .3em $marron;
+    opacity: 0.7;
 }
 
 /// index__tendencias /
+.tendencias {
+    h2 {
+        margin-top: .5em;
+    }
+
+    .tendencias__ol {
+        p {
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+
+        @for $i from 1 through 6 {
+
+            .tendencias__ol--ico#{$i} {
+                list-style-image: url(../assets/iconos/#{$i}.svg);
+                padding: .5em;
+
+                &:hover {
+                    transform: scale(1.005, 1.005);
+                    transition: transform .2s ease-in-out;
+                    border-radius: 5px;
+                    background-color: rgba(129, 212, 189, 0.5);
+                    box-shadow: 0 0 .3em $naranja;
+                }
+            }
+        }
+
+        .tendencias__ol__h3--caps {
+            text-transform: capitalize;
+            font-weight: 300;
+        }
+    }
+}
 
 /// index__publicaciones /
+.publicaciones {
 
-.publicaciones__articulo {
-    margin: 1%;
-    border-radius: 5px;
-    border-style: none;
-    background-color: #81d4bc9c;
-    color: rgb(32, 32, 32);
-    overflow: hidden;
-    .publicaciones__articulo--ml {
-        margin-left: 2%;
-        margin-top: 2%;
-        width: 65%;
+    h3,
+    form {
+        margin-top: .5em;
     }
-    .publicaciones__articulo--marron{
-        color: $marron;
-    }
-    .publicaciones__articulo--ml-10-mb-2 {
-        margin-left: 10%;
-        margin-bottom: 2%;
-    }
-    .articulo__contenido {
-        display: flex;
-        justify-content: space-around;
+
+    .publicaciones__articulo {
         margin: 1%;
-        width: 93%;
-    }    
-    .articulo__contenido--order-width50 {
-        order: -1;
-        width: 50%;
-    }
-    .articulo__contenido--mx {
-        margin-left: 1%;
-        margin-right: 2%;
-    }
-    .articulo__contenido--161px {
         border-radius: 5px;
-        border-style: solid;
-        border-color: $verde2;
-        height: 86%;
-        width: 161px;
+        border-style: none;
+        background-color: #81d4bc9c;
+        color: rgb(32, 32, 32);
+        overflow: hidden;
+
+        .publicaciones__articulo--ml {
+            margin-left: 2%;
+            margin-top: 2%;
+            width: 65%;
+        }
+
+        .publicaciones__articulo--marron {
+            color: $marron;
+        }
+
+        .publicaciones__articulo--ml-10-mb-2 {
+            margin-left: 10%;
+            margin-bottom: 2%;
+            //agregado de estilo a #topicos en articulos
+            @extend .topico;
+        }
+
+        .articulo__contenido {
+            display: flex;
+            justify-content: space-between;
+            margin: 1%;
+            width: 93%;
+        }
+
+        .articulo__contenido--order-width50 {
+            order: -1;
+            width: 50%;
+        }
+
+        .articulo__contenido--mx {
+            margin-left: 1%;
+            margin-right: 2%;
+        }
+
+        .articulo__contenido--161px {
+            border: solid $verde2;
+            border-radius: 5px;
+            @include wdt-hgt(161px, 86%);
+        }
+
+        &:hover {
+            transform: scale(1.005, 1.005);
+            transition: transform .2s ease-in-out;
+            box-shadow: 0 0 .5em $marron;
+        }
     }
 }
 
@@ -126,24 +183,13 @@ ul li {
 ///////////////////////// NUESTRAHISTORIA /
 
 // nuestrahistoria__hist /
-.hist img{
-    border: 1px solid $marron;
-    height: auto;
-    max-width: 15%;
-    margin-left: 3em;
-    /* reemplazar esta imagen */
-}
-
-.hist p{
-    height: 60%;
-    border-right: 1px solid $verde1;
-    padding-right: 3em;
-}
-
-// nuestrahistoria__histvideoH /
-.videoH video{
+.hist iframe {
     height: 100%;
-    max-width: 75%;
+    max-width: 50%;
+}
+
+.hist p {
+    height: 95%;
     padding: 1em;
 }
 
@@ -151,19 +197,17 @@ ul li {
 
 // membresía__hero /
 
-#memHero h1 {
-    font-size: 5em;
+.memHero h1 {
+    font-size: 4em;
 }
-#memHero button{
-    height: 100%;
-    width: auto;
+
+.memHero button {
+    @include wdt-hgt(auto, 100%);
 }
 
 // membresía__haceteMiembro /
 
-/* adaptacion de resultado de google para poner opacidad al fondo */
-
-#elem3::before{
+.promo::before {
     background-image: url(../assets/letters-of-lead-1426501-1279x957.jpg);
     background-repeat: no-repeat;
     content: "";
@@ -173,20 +217,23 @@ ul li {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
-#elem3 h3{
-    color: #042B33;
+.promo h3 {
+    color: $verde1;
     position: relative;
     text-align: center;
+    font-size: 3em;
 }
 
-#elem3 button{
+.promo a {
     position: relative;
     /* TIENE QUE ESTAR RELATIVE PARA QUE NO TOME OPACITY */
-    height: 100%;
-    width: auto;
+    @extend .boton1;
+    //agregado estilo a #topicos
+    background-color: $marron;
+    //color de boton 'hacete miembro'
 }
 
 
@@ -194,111 +241,119 @@ ul li {
 
 // escribir__hero /
 
-.escrHero h1{
-    color:#042B33;
+.escrHero h1 {
+    color: $verde1;
     font-size: 2.5em;
     align-self: flex-start;
 }
-.escrHero p{
+
+.escrHero p {
     align-self: flex-start;
     max-width: 70%;
 }
-.escrHero a{
+
+.escrHero a {
     align-self: center;
+    background-color: $marron;
+    //color boton 'comenza a escribir'
 }
-.escrHero a button{
-    height: 4rem;
-    width: 13rem;
-}
-.escrHero img{
+
+.escrHero img {
     height: 100%;
-    max-width:55vw;
+    max-width: 55vw;
+    box-shadow: 0 0 .3em $marron;
 }
 
 // escribir__tituloEscritores /
 
-.escrHero #escrHeroTitle{
+.escrHero #escrHeroTitle {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border-right:2px solid $marron;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
 // escribir__escritores /
 
-.escritores ul{
-    display:flex;
+.escritores ul {
+    display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: flex-start; */
     font-size: 1.5em;
     border-top: 1px solid $naranja;
     height: 100%;
+    //layout columna escritores y borde superior
 }
-.escritores ul li{
+
+.escritores ul li {
     display: flex;
     align-items: center;
     border-bottom: 1px solid $naranja;
     height: 20%;
-    color: #81D4BD;
+    color: $verde4;
+    padding: .5em 0;
+    //nombres de escritores
 }
-.escritores img{
+
+.escritores img {
     border-radius: 3rem;
     margin-right: 1rem;
     height: 100%;
+    //avatares
 }
 
 ////////////////////////////// LOGIN /
 
 // login__nav /
 
-.loginGrid nav{
+.loginGrid nav {
+    //retoques al nav para login
     justify-self: stretch;
     border-bottom: 1px solid $naranja;
+
     img {
         vertical-align: inherit;
     }
-    ul{
-        margin:0;
+
+    ul {
+        margin: 0;
         padding-left: 0;
     }
+
 }
 
 // login__form /
 
-.login__form-title{
+.login__form-title {
     margin-bottom: 5%;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+}
 
+.login a {
+    background-color: $marron;
+    /*color boton iniciar sesion*/
 }
 
 .animate__animated.animate__fadeIn {
     --animate-delay: 1s;
 }
 
-.colorBoton{
-    background-color: $marron
-}
-
-// .login form{
-//     border-radius: 5px;
-//     padding: 5vh;
-//     background-color:$fondo;
-//     display: flex;
-//     align-content: center;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     height: 100%;
-// reemplazado por modal
-// }
-
 // login__footer /
 
-.loginFooter a{
+.loginFooter a {
     color: $naranja;
-    
+}
+
+// ERROR 404
+
+.background-errorpage {
+    background-image: url(../assets/error.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.errorpage__main .errorpage__main__home {
+    color: $verde4;
 }

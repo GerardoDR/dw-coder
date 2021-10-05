@@ -1,78 +1,87 @@
-/* New Palette
-verdes
-#042B33
-#166166
-#3B9199
-#81D4BD
-naranjas
-#602626
-#FFD1B7
-*/
-
 /* IMPORTS */
 
 @import "base";
 @import "layout";
 @import "components";
 
-
 /* MEDIA QUERY */
 
-@media only screen and (max-width: 720px){
-    body{
+@media screen and (max-width: 720px) {
+    body {
         font-size: 13px;
     }
+
     .hero {
         grid-template-columns: 1fr;
-
     }
-    div#imgHero{
+
+    div#imgHero {
         display: none;
     }
+
     .indexGrid {
         grid-template-areas:
-            'nav nav nav'
-            'hero hero hero'
-            'tendencias tendencias tendencias'
-            'publicaciones publicaciones publicaciones'
-            'topicos topicos topicos'
-            'footer footer footer';
+            "nav nav nav"
+            "hero hero hero"
+            "publicaciones publicaciones publicaciones"
+            "topicos topicos topicos"
+            "footer footer footer";
+
+        .tendencias {
+            display: none;
+        }
+
+        .publicaciones {
+            margin-top: 0.5em;
+        }
+
+        .hero {
+            border-bottom: black solid 1px;
+        }
     }
 
+    .escrHero img {
+        display: none;
+    }
 }
 
-@media only screen and (min-width: 721px){
-    body{
+@media screen and (min-width: 721px) {
+    body {
         font-size: 14px;
     }
-    .indexGrid {
-        grid-template-areas:
-            'nav nav nav'
-            'hero hero hero'
-            'tendencias tendencias tendencias'
-            'publicaciones publicaciones publicaciones'
-            'topicos topicos topicos'
-            'footer footer footer';
-    }
-    .indexGrid aside ol{
-        justify-content:start;
+
+    .indexGrid aside ol {
+        justify-content: start;
         align-self: start;
     }
-    .indexGrid aside{
+
+    .indexGrid aside {
         min-height: 9.375em;
+    }
+
+    .tendencias {
+        .tendencias__ol {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
-@media only screen and (min-width: 1024px){
-    body{
+.histGrid {
+    grid-template-columns: 70% 30%;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
         font-size: 16px;
     }
-    .indexGrid {
-        grid-template-areas:
-        'nav nav nav'
-        'hero hero hero'
-        'tendencias tendencias tendencias'
-        'publicaciones publicaciones topicos'
-        'publicaciones publicaciones footer';
+
+    .tendencias {
+        .tendencias__ol {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .histGrid {
+        grid-template-columns: 60% 40%;
     }
 }
