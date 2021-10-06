@@ -57,8 +57,8 @@ nav {
   background-color: #e7feff;
   display: grid;
   margin-left: 2px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(2, 1fr) 40%;
+  grid-template-rows: repeat(3, auto) 80vh auto;
   grid-template-areas: "nav nav nav" "hero hero hero" "tendencias tendencias tendencias" "publicaciones publicaciones topicos" "publicaciones publicaciones footer";
   max-width: 118.75em;
 }
@@ -146,12 +146,16 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 0.5em;
+  background-color: #042B33;
+  border-radius: 5px;
+  padding: 1em;
+  color: #FFD1B7;
+  margin: 4.3em 1em 1em;
 }
 .indexGrid__aside .aside__ol {
   display: grid;
   list-style: none;
-  grid-template-columns: repeat(3, 8em);
+  grid-template-columns: repeat(2, 8em);
   grid-template-rows: repeat(3, 1fr);
   justify-content: space-evenly;
   align-content: center;
@@ -159,6 +163,7 @@ nav {
   justify-items: center;
   row-gap: 0.5em;
   width: 70%;
+  color: white;
 }
 .indexGrid__aside .aside__ol .aside__ol--justCntr {
   justify-self: center;
@@ -167,6 +172,7 @@ nav {
 .indexGrid__footer {
   grid-area: footer;
   border-top: 2px solid #81D4BD;
+  margin: 1em;
 }
 
 .histHero {
@@ -178,6 +184,7 @@ nav {
   grid-area: hist;
   text-align: center;
   height: 100%;
+  min-height: 45vh;
   background-color: #FFD1B7;
   border-top: 2px solid #042B33;
 }
@@ -368,7 +375,7 @@ ul li {
 }
 
 .hero h1 {
-  font-size: 4em;
+  font-size: 3.3em;
 }
 
 #imgHero {
@@ -510,6 +517,11 @@ ul li {
   transform: scale(1.005, 1.005);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 0 0.5em #602626;
+}
+
+.indexGrid__aside a {
+  color: #FFD1B7;
+  text-decoration: none;
 }
 
 .indexGrid__footer--font-p {
@@ -663,15 +675,12 @@ ul li {
     font-size: 13px;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
   div#imgHero {
     display: none;
   }
 
   .indexGrid {
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: "nav nav nav" "hero hero hero" "publicaciones publicaciones publicaciones" "topicos topicos topicos" "footer footer footer";
   }
   .indexGrid .tendencias {
@@ -680,8 +689,16 @@ ul li {
   .indexGrid .publicaciones {
     margin-top: 0.5em;
   }
+  .indexGrid .indexGrid__aside {
+    margin: 0.5em;
+  }
+  .indexGrid .indexGrid__aside .aside__ol {
+    grid-template-columns: repeat(3, 8em);
+  }
   .indexGrid .hero {
     border-bottom: black solid 1px;
+    grid-template-columns: 1fr;
+    padding: 1em;
   }
 
   .escrHero img {
@@ -696,10 +713,6 @@ ul li {
   .indexGrid aside ol {
     justify-content: start;
     align-self: start;
-  }
-
-  .indexGrid aside {
-    min-height: 9.375em;
   }
 
   .tendencias .tendencias__ol {
