@@ -195,8 +195,6 @@ nav {
 
 .histFooter {
     grid-area: histFooter;
-    // align-items: flex-start;
-    // justify-content: flex-end;
     border-top: 2px solid $marron;
     width: 100%;
 }
@@ -243,7 +241,6 @@ nav {
     @include wdt-hgt(100%, 100%);
     grid-area: promo;
     border-top: 2px solid $marron;
-    // font-size: 3em;
     /* no quitar position: relative. importante para que funcione opacidad del fondo*/
     position: relative;
     display: flex;
