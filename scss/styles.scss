@@ -11,15 +11,12 @@
         font-size: 13px;
     }
 
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
     div#imgHero {
         display: none;
     }
 
     .indexGrid {
+        grid-template-rows:repeat(5,auto);
         grid-template-areas:
             "nav nav nav"
             "hero hero hero"
@@ -32,11 +29,18 @@
         }
 
         .publicaciones {
-            margin-top: 0.5em;
+            margin-top: .5em;
         }
-
+        .indexGrid__aside{
+            margin: .5em;
+            .aside__ol {
+                grid-template-columns: repeat(3, 8em);
+            }
+        }
         .hero {
             border-bottom: black solid 1px;
+            grid-template-columns: 1fr;
+            padding: 1em;
         }
     }
 
@@ -54,11 +58,7 @@
         justify-content: start;
         align-self: start;
     }
-
-    .indexGrid aside {
-        min-height: 9.375em;
-    }
-
+    
     .tendencias {
         .tendencias__ol {
             grid-template-columns: 1fr 1fr;

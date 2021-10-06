@@ -59,7 +59,7 @@ ul li {
 /// index__hero /
 
 .hero h1 {
-    font-size: 4em;
+    font-size: 3.3em;
 }
 
 #imgHero {
@@ -171,6 +171,13 @@ ul li {
             box-shadow: 0 0 .5em $marron;
         }
     }
+}
+
+/// index__aside /
+
+.indexGrid__aside a{
+    color: $naranja;
+    text-decoration: none;
 }
 
 /// index__footer /
