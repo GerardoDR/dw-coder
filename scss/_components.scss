@@ -67,7 +67,7 @@ ul li {
 }
 
 #imgHero img {
-    @include wdt-hgt(100%,100%);
+    @include wdt-hgt(100%, 100%);
     border-radius: .1em;
     margin: auto;
     box-shadow: 0 0 .3em $marron;
@@ -76,10 +76,6 @@ ul li {
 
 /// index__tendencias /
 .tendencias {
-    h2 {
-        margin-top: .5em;
-    }
-
     .tendencias__ol {
         p {
             margin-top: .5em;
@@ -111,14 +107,15 @@ ul li {
 
 /// index__publicaciones /
 .publicaciones {
-
+    margin: .5em 0 .5em .5em;
+    border-radius: 5px;
     h3,
     form {
-        margin-top: .5em;
+        margin: 0 .5em .5em 0;
     }
 
     .publicaciones__articulo {
-        margin: 1%;
+        margin: .5em .5em .5em 0;
         border-radius: 5px;
         border-style: none;
         background-color: #81d4bc9c;
@@ -129,6 +126,7 @@ ul li {
             margin-left: 2%;
             margin-top: 2%;
             width: 65%;
+
         }
 
         .publicaciones__articulo--marron {
@@ -138,6 +136,7 @@ ul li {
         .publicaciones__articulo--ml-10-mb-2 {
             margin-left: 10%;
             margin-bottom: 2%;
+            display: inline-block;
             //agregado de estilo a #topicos en articulos
             @extend .topico;
         }
@@ -175,7 +174,7 @@ ul li {
 
 /// index__aside /
 
-.indexGrid__aside a{
+.indexGrid__aside a {
     color: $naranja;
     text-decoration: none;
 }

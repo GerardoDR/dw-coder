@@ -16,7 +16,7 @@
     }
 
     .indexGrid {
-        grid-template-rows:repeat(5,auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "nav nav nav"
             "hero hero hero"
@@ -31,12 +31,15 @@
         .publicaciones {
             margin-top: .5em;
         }
-        .indexGrid__aside{
+
+        .indexGrid__aside {
             margin: .5em;
+
             .aside__ol {
                 grid-template-columns: repeat(3, 8em);
             }
         }
+
         .hero {
             border-bottom: black solid 1px;
             grid-template-columns: 1fr;
@@ -58,7 +61,7 @@
         justify-content: start;
         align-self: start;
     }
-    
+
     .tendencias {
         .tendencias__ol {
             grid-template-columns: 1fr 1fr;
